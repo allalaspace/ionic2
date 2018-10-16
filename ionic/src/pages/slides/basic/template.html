@@ -1,0 +1,62 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Slides</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="tutorial-page">
+
+  <ion-slides pager>
+    <ion-slide *ngFor="let slide of slides">
+      <ion-toolbar>
+      </ion-toolbar>
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+      <p>
+      
+        <button ion-button color="danger" icon-start>
+        <ion-icon name="logo-googleplus" role="img" 
+          class="icon icon-md ion-logo-googleplus" aria-label="logo googleplus"
+          ng-reflect-name="logo-googleplus"></ion-icon>
+          google
+        </button>
+        <button ion-button icon-start>
+          <!-- <ion-icon name='home'></ion-icon>  -->
+          <ion-icon name="logo-facebook" role="img" 
+           class="icon icon-md ion-logo-facebook" 
+           aria-label="logo facebook" 
+           ng-reflect-name="logo-facebook"></ion-icon>
+          facebook
+        </button>
+      
+      </p>
+    </ion-slide>
+    <ion-slide>
+      <ion-toolbar>
+      </ion-toolbar>
+      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
+      <h2 class="slide-title">Ready to Play?</h2>
+      <button ion-button large clear icon-end color="primary">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+
+      <p>
+
+        <button ion-button color="danger" icon-start>
+          <ion-icon name="logo-googleplus" role="img" class="icon icon-md ion-logo-googleplus" aria-label="logo googleplus"
+            ng-reflect-name="logo-googleplus"></ion-icon>
+          google
+        </button>
+        <button ion-button icon-start>
+          <ion-icon name="logo-facebook" role="img" class="icon icon-md ion-logo-facebook" aria-label="logo facebook"
+            ng-reflect-name="logo-facebook"></ion-icon>
+          facebook
+        </button>
+      
+      </p>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
